@@ -1,0 +1,1641 @@
+.csempeikon-lapos{
+	float:right;
+	display: block;
+	width: 60px;
+	margin: 5px 1px 1px 0;
+	text-align: right;
+	vertical-align: top;
+}
+.csempenev-lapos{
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	font-size:1.05em;
+	width:30px;
+	text-align: left;
+}
+.csempeszoveg-lapos{
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	font-size:0.98em;
+	width:150px;
+	text-align: left;
+	margin-right:5px
+}
+
+.csempeikon-szeles{
+	float:right;
+	display: block;
+	width: 160px;
+	height:106px;
+	margin: 5px 14px 10px 0;
+	text-align: right;
+	vertical-align: top;
+}
+.csempenev-szeles{
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	font-size:1em;
+	width:135px;
+	text-align: left;
+}
+.csempenev-szeles.fo{
+	font-size:1.3em;
+}
+.csempelink-szeles{
+	float:right;
+	display: block;
+	width: 200px;
+	margin: 1px 5px 10px 0;
+	text-align: right;
+	vertical-align: bottom;
+	text-decoration:none;
+}
+
+.csempeikon_nagy{
+	display: block;
+	height: 200px;
+	margin-top: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+.csempenev-nagy{
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	font-size:1.2em;
+}
+
+
+.tile-group.masfel-wide,
+.tile-strip.masfel-wide {
+  width: 240px;
+}
+
+.tile-group.fivehalf-tile,
+.tile-strip.fivehalf-tile {
+	width: 880px;
+	height: 880px;
+}
+.tile-group.fivehalf-tall,
+.tile-strip.fivehalf-tall {
+	height: 880px;
+}
+.tile-group.fivehalf-wide,
+.tile-strip.fivehalf-wide {
+	width: 880px;
+}
+.live-tile.fivehalf-wide{
+	width: 870px;
+}
+.live-tile.fivehalf-tall{
+	height: 880px;
+}
+
+.live-tile.threehalf-wide {
+	width: 560px;
+}
+
+.lablec{
+	background-color:#212021;
+	bottom:0;
+	color:#fff;
+	font-size:.9em;
+	height:20px;
+	left:0;
+	line-height:normal;
+	max-height:100%;
+	overflow:hidden;
+	padding:10px;
+}
+
+#lablec{
+	position: fixed;
+	bottom: 0px;
+	display: block;
+	height: 24px;
+	width: 100%;
+	text-align: left;
+	margin:0;
+	z-index:100;
+	right:0;
+	left:0;
+	background-color:#212021;
+	color:#fff;
+	padding-left:10px;
+	font-size:1em;
+}
+
+
+.hirszam{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.nemlatszo{
+	background-color:transparent;
+}
+
+.nyilikon{
+	display: block;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Űrlap méretezése */
+form{
+	padding:5px;
+	width: 100%;
+}
+.felasznalo input {
+	width:190px;
+	height:22px;
+}
+textarea {
+	width:420px;
+	height:80px;
+}
+/*Űrlap pozicionálása */
+.label_1 {
+	display: block;
+	width: 70px;
+	float: left;
+	text-align: right;
+	margin-right: 1px;
+}
+.felasznalo span {
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 0.9em;
+	width:100px;
+	text-align: left;
+}
+.fel-ablak{
+	display: none;
+}
+fieldset {
+   border:0 none;
+}
+input[type="submit"]{
+	margin-top:-25px;
+}
+
+/* Űrlapelemek árnyék, keret */
+form input[type=text], form input[type=email], form textarea {
+   padding-left: 5px;
+   border: 1px solid silver;
+   box-shadow: 0 0 3px #eeccc0, inset 0 -10px 20px #eeccc0;
+}
+textarea {		
+   border: 1px solid silver;
+   box-shadow: 0 0 3px #eeccc0, inset 0 -20px 80px #eeccc0;
+}
+
+#KRESZ a:link,  #menu a:visited {
+	color:#000000;
+    text-decoration:none;
+}
+#KRESZ a:hover {
+	color:#808080;
+    text-decoration:none;
+} 
+#KRESZ a:active {
+	color:#A9A9A9;
+	font-size:13px;
+}
+#KRESZ > ul > li a:link,  #menu > ul > li > a:visited {
+	color:#000000;
+    text-decoration:none;
+}
+#KRESZ > ul > li > a:hover {
+	color:#808080;
+    text-decoration:none;
+} 
+#KRESZ > ul > li > a:active {
+	color:#A9A9A9;
+	font-size:13px;
+}
+
+.felugro{
+	width:680px;
+	height:480px;
+	overflow:auto;
+	padding-left:10px;
+	padding-right:20px;
+}
+
+.csempeikon{
+	display: block;
+	height: 80px;
+	margin-top: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+.kicsi-csempeikon{
+	display: block;
+	height: 50px;
+	margin-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+.csempenev{
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+}
+
+p{
+	font-family: Segoe UI Light;
+}
+
+
+.tile-title{
+	font-style:Segoe UI Light;
+}
+
+
+
+.logokep{
+	display:center
+}
+
+.tile-group {
+    float: left;
+    margin-left: 30px
+}
+.tile-strip, .live-tile, .list-tile, .copy-tile, .slide {
+    float: left;
+}
+.statusz{
+	font-size: 42pt;
+	text-align: center;
+}
+.inline{
+	display:inline
+}
+.tile-title h2{
+	font-family:Segoe UI Light;
+	font-size:20 pt;
+}
+header{
+	position:fixed;
+}
+.content-wrapper {
+    overflow: auto;
+    position: relative;
+    margin: 0px 0px 0px 30px;
+    padding-bottom: 60px;
+    width: 2200px;
+}
+body{
+    color: #fff;
+	
+	background: url("images/hatter-2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	display:block;
+	float: left;
+	
+	font-family: Segoe UI;
+}
+
+#oldal{
+	font-family: Segoe UI Light;
+	width:2700px;
+}
+
+
+.oldalnév{
+	font-size: 42pt;
+	font-family:Segoe UI;
+}
+.on-plusz{
+	font-size: 38pt;
+	opacity:0.4;
+}
+
+#fejlec{
+	display:inline;
+}
+
+#fejléc{
+	float:left;
+	margin:-10px auto 0px 5px;
+	-moz-transition:font-size .3s;
+	-webkit-transition:font-size .3s;
+	-o-transition:font-size .3s;
+	transition:font-size .3s;
+}
+#tartalom{
+	padding-top:70px;
+	padding-left:60px;
+}
+
+.plusztart{
+	padding-left:-50px;
+}
+
+#fejléc a,
+#fejléc a,
+#fejléc a:visited {
+	font-size:8em;
+	text-decoration:none;
+	-moz-transition:font-size .3s;
+	-webkit-transition:font-size .3s;
+	-o-transition:font-size .3s;
+	transition:font-size .3s;
+}
+
+.alcím{
+	font-family: Segoe UI Light;
+	font-size: 22pt;
+}
+
+.live-tile.two-tile,
+.list-tile.two-tile,
+.copy-tile.two-tile,
+.tile-strip .flip-list > li.two-tile {
+  height: 310px;
+  width: 310px;
+}
+.live-tile.three-tile,
+.list-tile.three-tile,
+.copy-tile.three-tile,
+.tile-strip .flip-list > li.three-tile {
+  height: 470px;
+  width: 470px;
+}
+.live-tile.four-tile,
+.list-tile.four-tile,
+.copy-tile.four-tile,
+.tile-strip .flip-list > li.four-tile {
+  height: 630px;
+  width: 630px;
+}
+.live-tile.five-tile,
+.list-tile.five-tile,
+.copy-tile.five-tile,
+.tile-strip .flip-list > li.five-tile {
+  height: 790px;
+  width: 790px;
+}
+.live-tile.six-tile,
+.list-tile.six-tile,
+.copy-tile.six-tile,
+.tile-strip .flip-list > li.six-tile {
+  height: 950px;
+  width: 950px;
+}
+
+
+
+.tile-group.two-tile,
+.tile-strip.two-tile {
+  width: 320px;
+  height: 320px;
+}
+.tile-group.three-tile,
+.tile-strip.three-tile {
+  width: 480px;
+  height: 480px;
+}
+.tile-group.four-tile,
+.tile-strip.four-tile {
+  width: 640px;
+  height: 640px;
+}
+.tile-group.five-tile,
+.tile-strip.five-tile {
+  width: 800px;
+  height: 800px;
+}
+.tile-group.six-tile,
+.tile-strip.six-tile {
+  width: 960px;
+  height: 960px;
+}
+.tile-group.seven-tile,
+.tile-strip.seven-tile {
+  width: 1120px;
+  height: 1120px;
+}
+.tile-group.eight-tile,
+.tile-strip.eight-tile {
+  width: 1280px;
+  height: 12800px;
+}
+
+
+
+.half-tile i.icon, .half-tall i.icon, .half-wide i.icon {
+    font-size: 48px;
+    margin: 0.2em;
+    text-align: center;
+}
+i.icon {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    width: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-position: 0% 0%;
+    margin-top: 0px;
+    background-repeat: repeat;
+    background-image: none;
+    height: auto;
+}
+i.icon {
+    text-decoration: none;
+    font-size: 1.1em;
+    display: inline-block;
+}
+.fa-arrow-left:before {
+    content: "";
+}
+.fa-arrow-right:before {
+    content: "";
+}
+
+img.full-w.hir{
+  height:200px;
+}
+.bounce {
+    cursor: pointer;
+    outline: 1px solid transparent;
+    -moz-user-select: none;
+    transition: all 0.2s ease 0s;
+    transform: scale(1);
+    transform-origin: 50% 50% 0px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+
+.appbar-buttons li {
+    display: inline;
+    padding: 0px 10px;
+    float: left;
+    list-style: none outside none;
+}
+.appbar-buttons {
+    text-align: right;
+}
+ol, ul {
+    list-style: none outside none;
+}
+.appbar .clear {
+    clear: both;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.appbar-buttons {
+    margin: 0px auto;
+    position: relative;
+    padding: 0px 0px 2px;
+    text-align: right;
+    width: 252px;
+}
+.amber .accent,
+.amber .accentBg,
+.amber .accentBgHover:hover,
+.amber .accentBgHover a:hover,
+.amber .live-tile > div,
+.amber .copy-tile > div,
+.amber .live-tile > .face,
+.amber .copy-tile > .face,
+.amber .live-tile > .slide,
+.amber .live-tile > .flip-back,
+.amber .live-tile > .flip-front,
+.amber .live-tile > .slide-back,
+.amber .live-tile > .slide-front,
+.amber .list-tile > div,
+.amber .flip-list > li > div {
+  background-color: #f1a30b;
+}
+.amber .accentColor,
+.amber .accentHover:hover,
+.amber .accentHover a:hover,
+.amber .accentLink a,
+.amber .accentLink a:hover,
+.amber .accentLink a:visited,
+.amber a.accentLink,
+.amber a.accentLink:hover,
+.amber a.accentLink:visited {
+  color: #f1a30b;
+}
+.amber .accentBorder {
+  border-color: #f1a30b;
+}
+.amber .accentBorderBottom {
+  border-bottom-color: #f1a30b;
+}
+.amber .accentBorderLeft {
+  border-left-color: #f1a30b;
+}
+.amber .accentBorderRight {
+  border-right-color: #f1a30b;
+}
+.amber .accentBorderTop {
+  border-top-color: #f1a30b;
+}
+.blue .accent,
+.blue .accentBg,
+.blue .accentBgHover:hover,
+.blue .accentBgHover a:hover,
+.blue .live-tile > div,
+.blue .copy-tile > div,
+.blue .live-tile > .face,
+.blue .copy-tile > .face,
+.blue .live-tile > .slide,
+.blue .live-tile > .flip-back,
+.blue .live-tile > .flip-front,
+.blue .live-tile > .slide-back,
+.blue .live-tile > .slide-front,
+.blue .list-tile > div,
+.blue .flip-list > li > div {
+  background-color: #1ba1e2;
+}
+.blue .accentColor,
+.blue .accentHover:hover,
+.blue .accentHover a:hover,
+.blue .accentLink a,
+.blue .accentLink a:hover,
+.blue .accentLink a:visited,
+.blue a.accentLink,
+.blue a.accentLink:hover,
+.blue a.accentLink:visited {
+  color: #1ba1e2;
+}
+.blue .accentBorder {
+  border-color: #1ba1e2;
+}
+.blue .accentBorderBottom {
+  border-bottom-color: #1ba1e2;
+}
+.blue .accentBorderLeft {
+  border-left-color: #1ba1e2;
+}
+.blue .accentBorderRight {
+  border-right-color: #1ba1e2;
+}
+.blue .accentBorderTop {
+  border-top-color: #1ba1e2;
+}
+.brown .accent,
+.brown .accentBg,
+.brown .accentBgHover:hover,
+.brown .accentBgHover a:hover,
+.brown .live-tile > div,
+.brown .copy-tile > div,
+.brown .live-tile > .face,
+.brown .copy-tile > .face,
+.brown .live-tile > .slide,
+.brown .live-tile > .flip-back,
+.brown .live-tile > .flip-front,
+.brown .live-tile > .slide-back,
+.brown .live-tile > .slide-front,
+.brown .list-tile > div,
+.brown .flip-list > li > div {
+  background-color: #a05000;
+}
+.brown .accentColor,
+.brown .accentHover:hover,
+.brown .accentHover a:hover,
+.brown .accentLink a,
+.brown .accentLink a:hover,
+.brown .accentLink a:visited,
+.brown a.accentLink,
+.brown a.accentLink:hover,
+.brown a.accentLink:visited {
+  color: #a05000;
+}
+.brown .accentBorder {
+  border-color: #a05000;
+}
+.brown .accentBorderBottom {
+  border-bottom-color: #a05000;
+}
+.brown .accentBorderLeft {
+  border-left-color: #a05000;
+}
+.brown .accentBorderRight {
+  border-right-color: #a05000;
+}
+.brown .accentBorderTop {
+  border-top-color: #a05000;
+}
+.cobalt .accent,
+.cobalt .accentBg,
+.cobalt .accentBgHover:hover,
+.cobalt .accentBgHover a:hover,
+.cobalt .live-tile > div,
+.cobalt .copy-tile > div,
+.cobalt .live-tile > .face,
+.cobalt .copy-tile > .face,
+.cobalt .live-tile > .slide,
+.cobalt .live-tile > .flip-back,
+.cobalt .live-tile > .flip-front,
+.cobalt .live-tile > .slide-back,
+.cobalt .live-tile > .slide-front,
+.cobalt .list-tile > div,
+.cobalt .flip-list > li > div {
+  background-color: #0050ef;
+}
+.cobalt .accentColor,
+.cobalt .accentHover:hover,
+.cobalt .accentHover a:hover,
+.cobalt .accentLink a,
+.cobalt .accentLink a:hover,
+.cobalt .accentLink a:visited,
+.cobalt a.accentLink,
+.cobalt a.accentLink:hover,
+.cobalt a.accentLink:visited {
+  color: #0050ef;
+}
+.cobalt .accentBorder {
+  border-color: #0050ef;
+}
+.cobalt .accentBorderBottom {
+  border-bottom-color: #0050ef;
+}
+.cobalt .accentBorderLeft {
+  border-left-color: #0050ef;
+}
+.cobalt .accentBorderRight {
+  border-right-color: #0050ef;
+}
+.cobalt .accentBorderTop {
+  border-top-color: #0050ef;
+}
+.crimson .accent,
+.crimson .accentBg,
+.crimson .accentBgHover:hover,
+.crimson .accentBgHover a:hover,
+.crimson .live-tile > div,
+.crimson .copy-tile > div,
+.crimson .live-tile > .face,
+.crimson .copy-tile > .face,
+.crimson .live-tile > .slide,
+.crimson .live-tile > .flip-back,
+.crimson .live-tile > .flip-front,
+.crimson .live-tile > .slide-back,
+.crimson .live-tile > .slide-front,
+.crimson .list-tile > div,
+.crimson .flip-list > li > div {
+  background-color: #a20025;
+}
+.crimson .accentColor,
+.crimson .accentHover:hover,
+.crimson .accentHover a:hover,
+.crimson .accentLink a,
+.crimson .accentLink a:hover,
+.crimson .accentLink a:visited,
+.crimson a.accentLink,
+.crimson a.accentLink:hover,
+.crimson a.accentLink:visited {
+  color: #a20025;
+}
+.crimson .accentBorder {
+  border-color: #a20025;
+}
+.crimson .accentBorderBottom {
+  border-bottom-color: #a20025;
+}
+.crimson .accentBorderLeft {
+  border-left-color: #a20025;
+}
+.crimson .accentBorderRight {
+  border-right-color: #a20025;
+}
+.crimson .accentBorderTop {
+  border-top-color: #a20025;
+}
+.cyan .accent,
+.cyan .accentBg,
+.cyan .accentBgHover:hover,
+.cyan .accentBgHover a:hover,
+.cyan .live-tile > div,
+.cyan .copy-tile > div,
+.cyan .live-tile > .face,
+.cyan .copy-tile > .face,
+.cyan .live-tile > .slide,
+.cyan .live-tile > .flip-back,
+.cyan .live-tile > .flip-front,
+.cyan .live-tile > .slide-back,
+.cyan .live-tile > .slide-front,
+.cyan .list-tile > div,
+.cyan .flip-list > li > div {
+  background-color: #1ba0e1;
+}
+.cyan .accentColor,
+.cyan .accentHover:hover,
+.cyan .accentHover a:hover,
+.cyan .accentLink a,
+.cyan .accentLink a:hover,
+.cyan .accentLink a:visited,
+.cyan a.accentLink,
+.cyan a.accentLink:hover,
+.cyan a.accentLink:visited {
+  color: #1ba0e1;
+}
+.cyan .accentBorder {
+  border-color: #1ba0e1;
+}
+.cyan .accentBorderBottom {
+  border-bottom-color: #1ba0e1;
+}
+.cyan .accentBorderLeft {
+  border-left-color: #1ba0e1;
+}
+.cyan .accentBorderRight {
+  border-right-color: #1ba0e1;
+}
+.cyan .accentBorderTop {
+  border-top-color: #1ba0e1;
+}
+.emerald .accent,
+.emerald .accentBg,
+.emerald .accentBgHover:hover,
+.emerald .accentBgHover a:hover,
+.emerald .live-tile > div,
+.emerald .copy-tile > div,
+.emerald .live-tile > .face,
+.emerald .copy-tile > .face,
+.emerald .live-tile > .slide,
+.emerald .live-tile > .flip-back,
+.emerald .live-tile > .flip-front,
+.emerald .live-tile > .slide-back,
+.emerald .live-tile > .slide-front,
+.emerald .list-tile > div,
+.emerald .flip-list > li > div {
+  background-color: #008a00;
+}
+.emerald .accentColor,
+.emerald .accentHover:hover,
+.emerald .accentHover a:hover,
+.emerald .accentLink a,
+.emerald .accentLink a:hover,
+.emerald .accentLink a:visited,
+.emerald a.accentLink,
+.emerald a.accentLink:hover,
+.emerald a.accentLink:visited {
+  color: #008a00;
+}
+.emerald .accentBorder {
+  border-color: #008a00;
+}
+.emerald .accentBorderBottom {
+  border-bottom-color: #008a00;
+}
+.emerald .accentBorderLeft {
+  border-left-color: #008a00;
+}
+.emerald .accentBorderRight {
+  border-right-color: #008a00;
+}
+.emerald .accentBorderTop {
+  border-top-color: #008a00;
+}
+.green .accent,
+.green .accentBg,
+.green .accentBgHover:hover,
+.green .accentBgHover a:hover,
+.green .live-tile > div,
+.green .copy-tile > div,
+.green .live-tile > .face,
+.green .copy-tile > .face,
+.green .live-tile > .slide,
+.green .live-tile > .flip-back,
+.green .live-tile > .flip-front,
+.green .live-tile > .slide-back,
+.green .live-tile > .slide-front,
+.green .list-tile > div,
+.green .flip-list > li > div {
+  background-color: #339933;
+}
+.green .accentColor,
+.green .accentHover:hover,
+.green .accentHover a:hover,
+.green .accentLink a,
+.green .accentLink a:hover,
+.green .accentLink a:visited,
+.green a.accentLink,
+.green a.accentLink:hover,
+.green a.accentLink:visited {
+  color: #339933;
+}
+.green .accentBorder {
+  border-color: #339933;
+}
+.green .accentBorderBottom {
+  border-bottom-color: #339933;
+}
+.green .accentBorderLeft {
+  border-left-color: #339933;
+}
+.green .accentBorderRight {
+  border-right-color: #339933;
+}
+.green .accentBorderTop {
+  border-top-color: #339933;
+}
+.indigo .accent,
+.indigo .accentBg,
+.indigo .accentBgHover:hover,
+.indigo .accentBgHover a:hover,
+.indigo .live-tile > div,
+.indigo .copy-tile > div,
+.indigo .live-tile > .face,
+.indigo .copy-tile > .face,
+.indigo .live-tile > .slide,
+.indigo .live-tile > .flip-back,
+.indigo .live-tile > .flip-front,
+.indigo .live-tile > .slide-back,
+.indigo .live-tile > .slide-front,
+.indigo .list-tile > div,
+.indigo .flip-list > li > div {
+  background-color: #6a00ff;
+}
+.indigo .accentColor,
+.indigo .accentHover:hover,
+.indigo .accentHover a:hover,
+.indigo .accentLink a,
+.indigo .accentLink a:hover,
+.indigo .accentLink a:visited,
+.indigo a.accentLink,
+.indigo a.accentLink:hover,
+.indigo a.accentLink:visited {
+  color: #6a00ff;
+}
+.indigo .accentBorder {
+  border-color: #6a00ff;
+}
+.indigo .accentBorderBottom {
+  border-bottom-color: #6a00ff;
+}
+.indigo .accentBorderLeft {
+  border-left-color: #6a00ff;
+}
+.indigo .accentBorderRight {
+  border-right-color: #6a00ff;
+}
+.indigo .accentBorderTop {
+  border-top-color: #6a00ff;
+}
+.lime .accent,
+.lime .accentBg,
+.lime .accentBgHover:hover,
+.lime .accentBgHover a:hover,
+.lime .live-tile > div,
+.lime .copy-tile > div,
+.lime .live-tile > .face,
+.lime .copy-tile > .face,
+.lime .live-tile > .slide,
+.lime .live-tile > .flip-back,
+.lime .live-tile > .flip-front,
+.lime .live-tile > .slide-back,
+.lime .live-tile > .slide-front,
+.lime .list-tile > div,
+.lime .flip-list > li > div {
+  background-color: #a2c139;
+}
+.lime .accentColor,
+.lime .accentHover:hover,
+.lime .accentHover a:hover,
+.lime .accentLink a,
+.lime .accentLink a:hover,
+.lime .accentLink a:visited,
+.lime a.accentLink,
+.lime a.accentLink:hover,
+.lime a.accentLink:visited {
+  color: #a2c139;
+}
+.lime .accentBorder {
+  border-color: #a2c139;
+}
+.lime .accentBorderBottom {
+  border-bottom-color: #a2c139;
+}
+.lime .accentBorderLeft {
+  border-left-color: #a2c139;
+}
+.lime .accentBorderRight {
+  border-right-color: #a2c139;
+}
+.lime .accentBorderTop {
+  border-top-color: #a2c139;
+}
+.magenta .accent,
+.magenta .accentBg,
+.magenta .accentBgHover:hover,
+.magenta .accentBgHover a:hover,
+.magenta .live-tile > div,
+.magenta .copy-tile > div,
+.magenta .live-tile > .face,
+.magenta .copy-tile > .face,
+.magenta .live-tile > .slide,
+.magenta .live-tile > .flip-back,
+.magenta .live-tile > .flip-front,
+.magenta .live-tile > .slide-back,
+.magenta .live-tile > .slide-front,
+.magenta .list-tile > div,
+.magenta .flip-list > li > div {
+  background-color: #d80073;
+}
+.magenta .accentColor,
+.magenta .accentHover:hover,
+.magenta .accentHover a:hover,
+.magenta .accentLink a,
+.magenta .accentLink a:hover,
+.magenta .accentLink a:visited,
+.magenta a.accentLink,
+.magenta a.accentLink:hover,
+.magenta a.accentLink:visited {
+  color: #d80073;
+}
+.magenta .accentBorder {
+  border-color: #d80073;
+}
+.magenta .accentBorderBottom {
+  border-bottom-color: #d80073;
+}
+.magenta .accentBorderLeft {
+  border-left-color: #d80073;
+}
+.magenta .accentBorderRight {
+  border-right-color: #d80073;
+}
+.magenta .accentBorderTop {
+  border-top-color: #d80073;
+}
+.mango .accent,
+.mango .accentBg,
+.mango .accentBgHover:hover,
+.mango .accentBgHover a:hover,
+.mango .live-tile > div,
+.mango .copy-tile > div,
+.mango .live-tile > .face,
+.mango .copy-tile > .face,
+.mango .live-tile > .slide,
+.mango .live-tile > .flip-back,
+.mango .live-tile > .flip-front,
+.mango .live-tile > .slide-back,
+.mango .live-tile > .slide-front,
+.mango .list-tile > div,
+.mango .flip-list > li > div {
+  background-color: #f09609;
+}
+.mango .accentColor,
+.mango .accentHover:hover,
+.mango .accentHover a:hover,
+.mango .accentLink a,
+.mango .accentLink a:hover,
+.mango .accentLink a:visited,
+.mango a.accentLink,
+.mango a.accentLink:hover,
+.mango a.accentLink:visited {
+  color: #f09609;
+}
+.mango .accentBorder {
+  border-color: #f09609;
+}
+.mango .accentBorderBottom {
+  border-bottom-color: #f09609;
+}
+.mango .accentBorderLeft {
+  border-left-color: #f09609;
+}
+.mango .accentBorderRight {
+  border-right-color: #f09609;
+}
+.mango .accentBorderTop {
+  border-top-color: #f09609;
+}
+.mauve .accent,
+.mauve .accentBg,
+.mauve .accentBgHover:hover,
+.mauve .accentBgHover a:hover,
+.mauve .live-tile > div,
+.mauve .copy-tile > div,
+.mauve .live-tile > .face,
+.mauve .copy-tile > .face,
+.mauve .live-tile > .slide,
+.mauve .live-tile > .flip-back,
+.mauve .live-tile > .flip-front,
+.mauve .live-tile > .slide-back,
+.mauve .live-tile > .slide-front,
+.mauve .list-tile > div,
+.mauve .flip-list > li > div {
+  background-color: #765f89;
+}
+.mauve .accentColor,
+.mauve .accentHover:hover,
+.mauve .accentHover a:hover,
+.mauve .accentLink a,
+.mauve .accentLink a:hover,
+.mauve .accentLink a:visited,
+.mauve a.accentLink,
+.mauve a.accentLink:hover,
+.mauve a.accentLink:visited {
+  color: #765f89;
+}
+.mauve .accentBorder {
+  border-color: #765f89;
+}
+.mauve .accentBorderBottom {
+  border-bottom-color: #765f89;
+}
+.mauve .accentBorderLeft {
+  border-left-color: #765f89;
+}
+.mauve .accentBorderRight {
+  border-right-color: #765f89;
+}
+.mauve .accentBorderTop {
+  border-top-color: #765f89;
+}
+.olive .accent,
+.olive .accentBg,
+.olive .accentBgHover:hover,
+.olive .accentBgHover a:hover,
+.olive .live-tile > div,
+.olive .copy-tile > div,
+.olive .live-tile > .face,
+.olive .copy-tile > .face,
+.olive .live-tile > .slide,
+.olive .live-tile > .flip-back,
+.olive .live-tile > .flip-front,
+.olive .live-tile > .slide-back,
+.olive .live-tile > .slide-front,
+.olive .list-tile > div,
+.olive .flip-list > li > div {
+  background-color: #6d8764;
+}
+.olive .accentColor,
+.olive .accentHover:hover,
+.olive .accentHover a:hover,
+.olive .accentLink a,
+.olive .accentLink a:hover,
+.olive .accentLink a:visited,
+.olive a.accentLink,
+.olive a.accentLink:hover,
+.olive a.accentLink:visited {
+  color: #6d8764;
+}
+.olive .accentBorder {
+  border-color: #6d8764;
+}
+.olive .accentBorderBottom {
+  border-bottom-color: #6d8764;
+}
+.olive .accentBorderLeft {
+  border-left-color: #6d8764;
+}
+.olive .accentBorderRight {
+  border-right-color: #6d8764;
+}
+.olive .accentBorderTop {
+  border-top-color: #6d8764;
+}
+.orange .accent,
+.orange .accentBg,
+.orange .accentBgHover:hover,
+.orange .accentBgHover a:hover,
+.orange .live-tile > div,
+.orange .copy-tile > div,
+.orange .live-tile > .face,
+.orange .copy-tile > .face,
+.orange .live-tile > .slide,
+.orange .live-tile > .flip-back,
+.orange .live-tile > .flip-front,
+.orange .live-tile > .slide-back,
+.orange .live-tile > .slide-front,
+.orange .list-tile > div,
+.orange .flip-list > li > div {
+  background-color: #fa6801;
+}
+.orange .accentColor,
+.orange .accentHover:hover,
+.orange .accentHover a:hover,
+.orange .accentLink a,
+.orange .accentLink a:hover,
+.orange .accentLink a:visited,
+.orange a.accentLink,
+.orange a.accentLink:hover,
+.orange a.accentLink:visited {
+  color: #fa6801;
+}
+.orange .accentBorder {
+  border-color: #fa6801;
+}
+.orange .accentBorderBottom {
+  border-bottom-color: #fa6801;
+}
+.orange .accentBorderLeft {
+  border-left-color: #fa6801;
+}
+.orange .accentBorderRight {
+  border-right-color: #fa6801;
+}
+.orange .accentBorderTop {
+  border-top-color: #fa6801;
+}
+.pink .accent,
+.pink .accentBg,
+.pink .accentBgHover:hover,
+.pink .accentBgHover a:hover,
+.pink .live-tile > div,
+.pink .copy-tile > div,
+.pink .live-tile > .face,
+.pink .copy-tile > .face,
+.pink .live-tile > .slide,
+.pink .live-tile > .flip-back,
+.pink .live-tile > .flip-front,
+.pink .live-tile > .slide-back,
+.pink .live-tile > .slide-front,
+.pink .list-tile > div,
+.pink .flip-list > li > div {
+  background-color: #e671b8;
+}
+.pink .accentColor,
+.pink .accentHover:hover,
+.pink .accentHover a:hover,
+.pink .accentLink a,
+.pink .accentLink a:hover,
+.pink .accentLink a:visited,
+.pink a.accentLink,
+.pink a.accentLink:hover,
+.pink a.accentLink:visited {
+  color: #e671b8;
+}
+.pink .accentBorder {
+  border-color: #e671b8;
+}
+.pink .accentBorderBottom {
+  border-bottom-color: #e671b8;
+}
+.pink .accentBorderLeft {
+  border-left-color: #e671b8;
+}
+.pink .accentBorderRight {
+  border-right-color: #e671b8;
+}
+.pink .accentBorderTop {
+  border-top-color: #e671b8;
+}
+.purple .accent,
+.purple .accentBg,
+.purple .accentBgHover:hover,
+.purple .accentBgHover a:hover,
+.purple .live-tile > div,
+.purple .copy-tile > div,
+.purple .live-tile > .face,
+.purple .copy-tile > .face,
+.purple .live-tile > .slide,
+.purple .live-tile > .flip-back,
+.purple .live-tile > .flip-front,
+.purple .live-tile > .slide-back,
+.purple .live-tile > .slide-front,
+.purple .list-tile > div,
+.purple .flip-list > li > div {
+  background-color: #a200ff;
+}
+.purple .accentColor,
+.purple .accentHover:hover,
+.purple .accentHover a:hover,
+.purple .accentLink a,
+.purple .accentLink a:hover,
+.purple .accentLink a:visited,
+.purple a.accentLink,
+.purple a.accentLink:hover,
+.purple a.accentLink:visited {
+  color: #a200ff;
+}
+.purple .accentBorder {
+  border-color: #a200ff;
+}
+.purple .accentBorderBottom {
+  border-bottom-color: #a200ff;
+}
+.purple .accentBorderLeft {
+  border-left-color: #a200ff;
+}
+.purple .accentBorderRight {
+  border-right-color: #a200ff;
+}
+.purple .accentBorderTop {
+  border-top-color: #a200ff;
+}
+.violet .accent,
+.violet .accentBg,
+.violet .accentBgHover:hover,
+.violet .accentBgHover a:hover,
+.violet .live-tile > div,
+.violet .copy-tile > div,
+.violet .live-tile > .face,
+.violet .copy-tile > .face,
+.violet .live-tile > .slide,
+.violet .live-tile > .flip-back,
+.violet .live-tile > .flip-front,
+.violet .live-tile > .slide-back,
+.violet .live-tile > .slide-front,
+.violet .list-tile > div,
+.violet .flip-list > li > div {
+  background-color: #a200ff;
+}
+.violet .accentColor,
+.violet .accentHover:hover,
+.violet .accentHover a:hover,
+.violet .accentLink a,
+.violet .accentLink a:hover,
+.violet .accentLink a:visited,
+.violet a.accentLink,
+.violet a.accentLink:hover,
+.violet a.accentLink:visited {
+  color: #a200ff;
+}
+.violet .accentBorder {
+  border-color: #a200ff;
+}
+.violet .accentBorderBottom {
+  border-bottom-color: #a200ff;
+}
+.violet .accentBorderLeft {
+  border-left-color: #a200ff;
+}
+.violet .accentBorderRight {
+  border-right-color: #a200ff;
+}
+.violet .accentBorderTop {
+  border-top-color: #a200ff;
+}
+.red .accent,
+.red .accentBg,
+.red .accentBgHover:hover,
+.red .accentBgHover a:hover,
+.red .live-tile > div,
+.red .copy-tile > div,
+.red .live-tile > .face,
+.red .copy-tile > .face,
+.red .live-tile > .slide,
+.red .live-tile > .flip-back,
+.red .live-tile > .flip-front,
+.red .live-tile > .slide-back,
+.red .live-tile > .slide-front,
+.red .list-tile > div,
+.red .flip-list > li > div {
+  background-color: #e51400;
+}
+.red .accentColor,
+.red .accentHover:hover,
+.red .accentHover a:hover,
+.red .accentLink a,
+.red .accentLink a:hover,
+.red .accentLink a:visited,
+.red a.accentLink,
+.red a.accentLink:hover,
+.red a.accentLink:visited {
+  color: #e51400;
+}
+.red .accentBorder {
+  border-color: #e51400;
+}
+.red .accentBorderBottom {
+  border-bottom-color: #e51400;
+}
+.red .accentBorderLeft {
+  border-left-color: #e51400;
+}
+.red .accentBorderRight {
+  border-right-color: #e51400;
+}
+.red .accentBorderTop {
+  border-top-color: #e51400;
+}
+.sienna .accent,
+.sienna .accentBg,
+.sienna .accentBgHover:hover,
+.sienna .accentBgHover a:hover,
+.sienna .live-tile > div,
+.sienna .copy-tile > div,
+.sienna .live-tile > .face,
+.sienna .copy-tile > .face,
+.sienna .live-tile > .slide,
+.sienna .live-tile > .flip-back,
+.sienna .live-tile > .flip-front,
+.sienna .live-tile > .slide-back,
+.sienna .live-tile > .slide-front,
+.sienna .list-tile > div,
+.sienna .flip-list > li > div {
+  background-color: #7b3a3e;
+}
+.sienna .accentColor,
+.sienna .accentHover:hover,
+.sienna .accentHover a:hover,
+.sienna .accentLink a,
+.sienna .accentLink a:hover,
+.sienna .accentLink a:visited,
+.sienna a.accentLink,
+.sienna a.accentLink:hover,
+.sienna a.accentLink:visited {
+  color: #7b3a3e;
+}
+.sienna .accentBorder {
+  border-color: #7b3a3e;
+}
+.sienna .accentBorderBottom {
+  border-bottom-color: #7b3a3e;
+}
+.sienna .accentBorderLeft {
+  border-left-color: #7b3a3e;
+}
+.sienna .accentBorderRight {
+  border-right-color: #7b3a3e;
+}
+.sienna .accentBorderTop {
+  border-top-color: #7b3a3e;
+}
+.steel .accent,
+.steel .accentBg,
+.steel .accentBgHover:hover,
+.steel .accentBgHover a:hover,
+.steel .live-tile > div,
+.steel .copy-tile > div,
+.steel .live-tile > .face,
+.steel .copy-tile > .face,
+.steel .live-tile > .slide,
+.steel .live-tile > .flip-back,
+.steel .live-tile > .flip-front,
+.steel .live-tile > .slide-back,
+.steel .live-tile > .slide-front,
+.steel .list-tile > div,
+.steel .flip-list > li > div {
+  background-color: #657688;
+}
+.steel .accentColor,
+.steel .accentHover:hover,
+.steel .accentHover a:hover,
+.steel .accentLink a,
+.steel .accentLink a:hover,
+.steel .accentLink a:visited,
+.steel a.accentLink,
+.steel a.accentLink:hover,
+.steel a.accentLink:visited {
+  color: #657688;
+}
+.steel .accentBorder {
+  border-color: #657688;
+}
+.steel .accentBorderBottom {
+  border-bottom-color: #657688;
+}
+.steel .accentBorderLeft {
+  border-left-color: #657688;
+}
+.steel .accentBorderRight {
+  border-right-color: #657688;
+}
+.steel .accentBorderTop {
+  border-top-color: #657688;
+}
+.teal .accent,
+.teal .accentBg,
+.teal .accentBgHover:hover,
+.teal .accentBgHover a:hover,
+.teal .live-tile > div,
+.teal .copy-tile > div,
+.teal .live-tile > .face,
+.teal .copy-tile > .face,
+.teal .live-tile > .slide,
+.teal .live-tile > .flip-back,
+.teal .live-tile > .flip-front,
+.teal .live-tile > .slide-back,
+.teal .live-tile > .slide-front,
+.teal .list-tile > div,
+.teal .flip-list > li > div {
+  background-color: #00aba9;
+}
+.teal .accentColor,
+.teal .accentHover:hover,
+.teal .accentHover a:hover,
+.teal .accentLink a,
+.teal .accentLink a:hover,
+.teal .accentLink a:visited,
+.teal a.accentLink,
+.teal a.accentLink:hover,
+.teal a.accentLink:visited {
+  color: #00aba9;
+}
+.teal .accentBorder {
+  border-color: #00aba9;
+}
+.teal .accentBorderBottom {
+  border-bottom-color: #00aba9;
+}
+.teal .accentBorderLeft {
+  border-left-color: #00aba9;
+}
+.teal .accentBorderRight {
+  border-right-color: #00aba9;
+}
+.teal .accentBorderTop {
+  border-top-color: #00aba9;
+}
+.yellow .accent,
+.yellow .accentBg,
+.yellow .accentBgHover:hover,
+.yellow .accentBgHover a:hover,
+.yellow .live-tile > div,
+.yellow .copy-tile > div,
+.yellow .live-tile > .face,
+.yellow .copy-tile > .face,
+.yellow .live-tile > .slide,
+.yellow .live-tile > .flip-back,
+.yellow .live-tile > .flip-front,
+.yellow .live-tile > .slide-back,
+.yellow .live-tile > .slide-front,
+.yellow .list-tile > div,
+.yellow .flip-list > li > div {
+  background-color: #d8c101;
+}
+.yellow .accentColor,
+.yellow .accentHover:hover,
+.yellow .accentHover a:hover,
+.yellow .accentLink a,
+.yellow .accentLink a:hover,
+.yellow .accentLink a:visited,
+.yellow a.accentLink,
+.yellow a.accentLink:hover,
+.yellow a.accentLink:visited {
+  color: #d8c101;
+}
+.yellow .accentBorder {
+  border-color: #d8c101;
+}
+.yellow .accentBorderBottom {
+  border-bottom-color: #d8c101;
+}
+.yellow .accentBorderLeft {
+  border-left-color: #d8c101;
+}
+.yellow .accentBorderRight {
+  border-right-color: #d8c101;
+}
+.yellow .accentBorderTop {
+  border-top-color: #d8c101;
+}
+.trans .accent,
+.trans .accentBg,
+.trans .accentBgHover:hover,
+.trans .accentBgHover a:hover,
+.trans .live-tile > div,
+.trans .copy-tile > div,
+.trans .live-tile > .face,
+.trans .copy-tile > .face,
+.trans .live-tile > .slide,
+.trans .live-tile > .flip-back,
+.trans .live-tile > .flip-front,
+.trans .live-tile > .slide-back,
+.trans .live-tile > .slide-front,
+.trans .list-tile > div,
+.trans .flip-list > li > div {
+  background-color: transparent;
+}
+.trans .accentColor,
+.trans .accentHover:hover,
+.trans .accentHover a:hover,
+.trans .accentLink a,
+.trans .accentLink a:hover,
+.trans .accentLink a:visited,
+.trans a.accentLink,
+.trans a.accentLink:hover,
+.trans a.accentLink:visited {
+  color: transparent;
+}
+.trans .accentBorder {
+  border-color: transparent;
+}
+.trans .accentBorderBottom {
+  border-bottom-color: transparent;
+}
+.trans .accentBorderLeft {
+  border-left-color: transparent;
+}
+.trans .accentBorderRight {
+  border-right-color: transparent;
+}
+.trans .accentBorderTop {
+  border-top-color: transparent;
+}
+.white .accent,
+.white .accentBg,
+.white .accentBgHover:hover,
+.white .accentBgHover a:hover,
+.white .live-tile > div,
+.white .copy-tile > div,
+.white .live-tile > .face,
+.white .copy-tile > .face,
+.white .live-tile > .slide,
+.white .live-tile > .flip-back,
+.white .live-tile > .flip-front,
+.white .live-tile > .slide-back,
+.white .live-tile > .slide-front,
+.white .list-tile > div,
+.white .flip-list > li > div {
+  background-color: #ffffff;
+}
+.white .accentColor,
+.white .accentHover:hover,
+.white .accentHover a:hover,
+.white .accentLink a,
+.white .accentLink a:hover,
+.white .accentLink a:visited,
+.white a.accentLink,
+.white a.accentLink:hover,
+.white a.accentLink:visited {
+  color: #ffffff;
+}
+.white .accentBorder {
+  border-color: #ffffff;
+}
+.white .accentBorderBottom {
+  border-bottom-color: #ffffff;
+}
+.white .accentBorderLeft {
+  border-left-color: #ffffff;
+}
+.white .accentBorderRight {
+  border-right-color: #ffffff;
+}
+.white .accentBorderTop {
+  border-top-color: #ffffff;
+}
+.bg-black
+  background-color: #000000;
+}
+.black .accentColor,
+.black .accentHover:hover,
+.black .accentHover a:hover,
+.black .accentLink a,
+.black .accentLink a:hover,
+.black .accentLink a:visited,
+.black a.accentLink,
+.black a.accentLink:hover,
+.black a.accentLink:visited {
+  color: #000000;
+}
+.black .accentBorder {
+  border-color: #000000;
+}
+.black .accentBorderBottom {
+  border-bottom-color: #000000;
+}
+.black .accentBorderLeft {
+  border-left-color: #000000;
+}
+.black .accentBorderRight {
+  border-right-color: #000000;
+}
+.black .accentBorderTop {
+  border-top-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+html, body, * {
+    -moz-box-sizing: border-box;
+}
+
+button, input, select, textarea {
+    margin: 0px;
+    font-size: 100%;
+    vertical-align: middle;
+	
+	
+}
+.nagygomb{
+	width: 20px;
+	height: 20px;
+	background-color: #FFF;
+	border: 2px solid rgb(217, 217, 217);
+	padding: 0px;
+	margin: 0px 5px 0px 0px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+

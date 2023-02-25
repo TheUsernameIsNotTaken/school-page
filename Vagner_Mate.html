@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+	<!-- A honlaphoz csak a jQuerty keretrendszer, MetroJs plugin és a FAnciBox v2 plugin lett felhasználva, a többi saját készítésü és eredetű, vagy a pluginokhoz készítet felhasználói útmutatóból származik. -->
+	<!-- Az összes Licensz szabályosan van felhasználva. A köszönet pluginok készítőinek. -->
+	<!-- Köszönet a http://icons8.com -nak a logókért. -->
+	<title>Huszár Gál Iskola</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Ez a Debreceni Huszár Gál Iskola honlapja. Az Iskolánk fontosnak tartja a tehetségek gondozását, fejlesztését és céljának tartja, hogy támogassa őket. 2003 májusában Debrecenben a Hit Gyülekezete egyház alapította meg iskolánkat. Ez a honlap egy weblapfejlesztő versenyre készült.">
+	<meta name="keywords" content="Huszár Gál Iskola, Huszár Gál Általános Iskola, Huszár Gál Gimnázium Általános Iskola és AMI,
+		Huszár Gál Gimnázium, Debreceni iskolák, iskolák Debrecenben, Iskola, Általános Iskola, Albanegra Iskola, Hit Gyülekezete Iskola">
+	<meta name="author" content="Vágner Máté">
+	<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+	<span itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="logo"><link rel="icon" type="image/gif" href="images\logo.png"></span></span>
+	<link rel="stylesheet" type="text/css" href="vmate.css">
+	<script src="jquery-2.1.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="MetroJs.min.css">
+    <script src="MetroJs.min.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	
+	<script src="jquery.mousewheel.js" type="text/javascript"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="FancyBox2/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="FancyBox2/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<!-- Add Thumbnail helper -->
+	<link rel="stylesheet" type="text/css" href="FancyBox2/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="FancyBox2/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!-- Add Media helper -->
+	<script type="text/javascript" src="FancyBox2/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	<script id="_waurs4">var _wau = _wau || [];
+_wau.push(["tab", "xm6k5hxkne4x", "rs4", "left-middle"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/tab.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-hird").click(function() {
+				$.fancybox.open('hird_honlap.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	
+	
+  </head>
+  
+  <body class=dark>
+   <div id="oldal" itemscope itemtype="http://schema.org/EducationalOrganization">
+	<header id=fejlec><span itemprop="legalName"><span class="oldalnév fejléc">Huszár Gál Gimnázium </span><span class=on-plusz>Általános Iskola és AMI</span></span></header>
+    <div id=tartalom>
+	  <div class="tiles tile-group three-tall three-wide">    
+		<div class=alcím>Friss</div>
+		<div class="tile-strip two-wide">
+		<div id="hirek" class="live-tile two-tile orange" data-mode="carousel" data-start-now="true" data-direction="horizontal" data-delay="3500" data-pause-onhover="pause">
+		  
+		  <div>
+            <a class="fancybox" href="#marc15">
+			  <img class="full-w hir" src="images/hirek/marc15.jpg" alt="curie" height="200" />
+              <span class="tile-title accent"><h2>MÁRCIUS 15-RE EMLÉKEZÜNK</h2>
+				2014. március 14-én, pénteken iskolánkban megrendezésre került a március 15-ei megemlékezés...
+			  </span>		  
+			</a>
+			<div class=fel-ablak>
+				  <div id="marc15" class=felugro>
+					<h3 style="padding-top:-10px">MÁRCIUS 15-RE EMLÉKEZÜNK</h3>
+					<p>2014. március 14-én, pénteken iskolánkban megrendezésre került a március 15-ei megemlékezés.
+					Az ünnepség keretében elénekeltük a Himnuszt, idézetet hallhattunk Petőfi-naplójából, felidéztük
+					a a forradalom napjának eseményeit, megemlékeztünk '48 hőseiről, fiatalok szereplésével színdarabot
+					láthattunk, illetve a Nemzeti dal hangzott el.</p>
+					<p align="center"><img src="images/hirek/unnep2014marc15.jpg" width="580" alt="Március 15."></p>
+				  </div>
+			</div>
+          </div>
+		  <div>
+            <a target="_blank" href="http://huszargaliskola.hu/uj/letoltes/jelentkezokfelvetelijegyzeke.pdf">
+			  <img class="full-w hir" src="images/hirek/rangsor.jpg" alt="curie" height="200" />
+              <span class="tile-title accent"><h2>JELENTKEZŐK FELVÉTELI JEGYZÉKE</h2>
+				Ide kattintva megtekinthető a Huszár Gál Iskolába jelentkezők felvételi jegyzéke.
+			  </span>
+			</a>
+				
+          </div>
+		  <div>
+            <a target="_blank" href="http://huszargaliskola.hu/uj/letoltes/tankonyvkedvezmenyigenylo.pdf">
+			  <img class="full-w hir" src="images/hirek/tankonyv.jpg" alt="curie" height="200" />
+              <span class="tile-title accent"><h2>TANKÖNYVKEDVEZMÉNYT IGÉNYLŐ LAP LETÖLTÉSE</h2>
+				A kedvezményes tankönyv igényléséhez szükséges nyomtatvány idea kattintva letölthető.
+			  </span>
+			</a>
+          </div>
+		  <div>
+            <a class="fancybox" href="#kaziverseny">
+			  <img class="full-w hir" src="images/hirek/kazi.jpg" alt="kazi" height="200" />
+              <span class="tile-title accent"><h2>SIKER A KAZINCZY VERSENYEN!</h2>
+				Az Újkerti Művelődési Központban 2014.02.11., kedden a Kazinczy Szép Magyar Beszéd városi verseny került megrendezésre...
+			  </span>
+			</a>
+			<div id="kaziverseny" class="felugro fel-ablak">
+				<h2>SIKER A KAZINCZY VERSENYEN!</h2>
+				<br>Az Újkerti Művelődési Központban 2014.02.11., kedden a Kazinczy Szép Magyar Beszéd városi verseny került megrendezésre, melyen több diákunk is megmérettetett.
+				<br>Molnár Botond 6. osztályos tanulónk II. helyezést ért el.
+				<br>Gratulálunk!
+			</div>
+          </div>
+          <div>
+            <a class="fancybox" href="#bozsik">
+			  <img class="full-w hir" src="images/bozsik/andrisfoci4.jpg" alt="andrasfoci" height="200" />
+              <span class="tile-title accent"><h2>SIKEREK A TÉLI BOZSIK LABDARÚGÓ KUPÁN!</h2>
+				2014. február 1-én és 2-án a Huszár Gál Iskola tornatermében került megrendezésre a téli Bozsik Intézményi Torna, melyen Debrecen városának több iskolája is részt vett...
+			  </span>
+			</a>
+			<div id="bozsik" class="felugro fel-ablak">
+			  <h2>SIKEREK A TÉLI BOZSIK LABDARÚGÓ KUPÁN!</h2>
+			  <p align="justify">
+				2014. február 1-én és 2-án a Huszár Gál Iskola tornatermében került megrendezésre a téli Bozsik Intézményi Torna, melyen Debrecen városának több iskolája is részt vett, közöttük a mi iskolánk is.
+			  <br>
+			    Fiataljaink gólzáporos mérkőzéseken nyújtottak szép teljesítményt
+			  <br>
+				Minden diákunknak gratulálunk a tornán nyújtott sikeres, lelkes, odaszánt teljesítményéért.
+			  </p>
+			  <p align="justify">
+			    Eredmények:
+				<br>
+				- II.-es korcsoport (2004-2003): korcsoportjában 2. helyezés
+				<br>
+				- III.-as korcsoport (2002-2001): csoportjában 2. helyezés
+				<br>
+			  </p>
+			  <p align="center"><img width="500" src="images/bozsik/andrisfoci1.jpg" tooltip="" tooltipenable="true" title="" alt="undefined"></img></p>
+			  <p align="center"><img width="500" src="images/bozsik/andrisfoci2.jpg"></img></p>
+			  <p align="center"><img width="500" src="images/bozsik/andrisfoci3.jpg"></img></p>
+			  <p align="center"><img width="500" src="images/bozsik/andrisfoci4.jpg"></img></p>
+			</div>
+          </div>
+		</div>
+		
+		  <div class="live-tile half-tile nemlatszo"><div></div></div>
+		  <a href="javascript:;" class="prev">
+			<div class="live-tile half-tile prev none bounce noselect" data-bounce-dir="*,l" data-bounce="true" data-mode="none" style="cursor: pointer;">
+			  <div class="clear">
+				<div class=nyilikon><img src="images/ikonok/left_round-64.png" alt="NI logó" width="100%" /></div>
+			  </div>
+			</div>
+		  </a>
+		  <div class="live-tile half-tile mango hirszam" data-mode="none">
+			<div class="clear">
+			  <span class="statusz"> 1.</span>
+			</div>
+		  </div>
+		  <a href="javascript:;" class="next">		  
+			<div class="live-tile half-tile next nemlatszo" data-bounce-dir="*,r" data-bounce="true" data-mode="none" style="cursor: pointer;">
+			  <div class="clear">
+				<div class=nyilikon><img src="images/ikonok/right_round-64.png" alt="NI logó" width="100%" /></div>
+			  </div>
+			</div>
+		  </a> 
+	  </div>
+	  
+	    <div id="logolista" class="plusztart red tile-group one-wide" data-initdelay="500" data-mode="flip-list" data-delay="3000">
+		  <div class="live-tile one-tile" data-mode:"flip">
+			<!-- Ide a sulilogó jött volna, de nem állt rendelkezésemre megfelelő  --><div style="font-size:2.4em;font-family: Segoe UI"><span itemprop="name">Huszár Gál Iskola</span></div>
+			<div><span style="font-size: 17pt;">OM-Kód: <p style="opacity:0.8;font-family: Segoe UI;">200329</p></span></div>
+          </div>
+		  <div class="live-tile one-tile" data-mode:"flip">
+			<div><img class="full logokep" src="images/logok/Akr_kiv.jpg" alt="Akkreditált kiváló tehetségpont" /></div>
+			<div><img class="full logokep" src="images/logok/sze_eu_mm.png" alt="Támogató logók" /></div>
+          </div>
+          <div class="live-tile half-tall"  data-mode="flip">
+			<div><img class="full logokep" src="images/logok/unideb_logo.png" alt="DE logó" /></div>
+			<div><img class="full logokep" src="images/logok/ni_logo.png" alt="NI logó" /></div>
+          </div>
+		</div>	
+	  </div>
+	 
+	  
+		
+	  <div class="tiles tile-group fivehalf-wide">
+		<div class=alcím>Tehetséggondozás</div>
+		<div class="tile-strip masfel-wide two-tall">
+		 <div class="live-tile red">
+			<div>
+			  <a class="" href="">
+				<div><img class=full src="images/ikonok/powerpoint-2013.png" alt="Power Point" /></div>
+				<div class=csempenev style="z-index:1; bottom:0;">Bemutató rólunk</div>
+			  </a>
+			</div>
+		  </div>
+		  <div class="live-tile half-tile red">
+			<div>
+			  <a target=_blank href="http://vimeo.com/21397619">
+				<div class=kicsi-csempeikon><img src="images/ikonok/1-48.png" alt="1" width="44" /></div>
+				<div class=csempenev style="left: 1px; bottom:0px; text-align:center; font-size:.9em;">1.rész</div>
+			  </a>
+			</div>
+		  </div>
+		  <div class="live-tile half-tile red">
+			<div>
+			  <a href="http://vimeo.com/21445041" target=_blank >
+				<div class=kicsi-csempeikon><img src="images/ikonok/2-48.png" alt="2" width="44" /></div>
+				<div class=csempenev style="left: 1px; bottom:0px; text-align:center; font-size:.9em;">2.rész</div>
+			  </a>
+			</div>
+		  </div>
+		
+		  
+		  <div class="live-tile cobalt"  style="text-align:center">
+			<div>
+			  <a target=_blank href="http://sakktehetsegek.hu/">
+				<div class=csempeikon><img src="images/ikonok/huszar-128.png" alt="Huszár" width="96" /></div>
+				<div class=csempenev>Sakk</div>
+			  </a>
+			</div>
+		  </div>
+		  <div class="live-tile half-wide blue">
+			<div>
+			  <a class="fancybox" href="#sakkeredmeny">
+			  <div class=csempeikon><img src="images/ikonok/dij-64.png" alt="Diploma" width="64" /></div>
+			  <div class=csempenev style="left: 6px; text-align:center; font-size:1.1em;">Ered-<br>mények</div>
+			  </a>
+			</div>
+			 <div id="sakkeredmeny" class="felugro fel-ablak" style="width:300px; height:130px;">
+				<h2>Sakk eredmények</h2>
+				<p>
+				  <a target="_blank" href="http://huszargaliskola.hu/uj/letoltes/sakkeredmeny0413.pdf">
+					Versenyeredmény 2004-2013
+				  </a>
+				  <br>
+				  <a target="_blank" href="http://huszargaliskola.hu/uj/letoltes/sakkolimpia2011.pdf">
+					Megyei Sakk Olimpia 2011
+				  </a>
+				</p>
+			 </div>
+		  </div>
+		</div>
+		<div class="tile-strip four-wide">
+		  <div class="live-tile steel">
+			<div>
+			  <a class="fancybox" href="#KRESZ">
+				<div class=csempeikon><img src="images/ikonok/kerekpar-128.png" alt="Kerékpár" width="96" /></div>
+				<div class=csempenev>KRESZ</div>
+			  </a>
+			  <div id="KRESZ" class="felugro fel-ablak">
+				<h2>KRESZ tehetséggondozás</h2>
+				<p>
+				  <a class="fancybox-media" href="http://www.youtube.com/watch?v=EJp-L9U7nQE">Videó a kresz szakkörről</a>
+				</p>
+				<p><a href="javascript:viewMore('two');" id="xtwo"} >&rarr; Eredményeink-Tanévek szerint</a>
+				<ul id="two" style="display:none">
+				  <li><a target=_blank href="http://huszargaliskola.hu/uj/index.php=oldal=120">2003-2004-es tanév</a></li>
+				  <li><a target=_blank href="http://huszargaliskola.hu/uj/index.php=oldal=121">2004-2005-es tanév</a></li>
+				  <li><a target=_blank href="http://huszargaliskola.hu/uj/index.php=oldal=122">2005-2006-es tanév</a></li>
+				  <li><a target=_blank href="http://huszargaliskola.hu/uj/index.php=oldal=123">2006-2007-es tanév</a></li>
+				  <li><a target=_blank href="http://huszargaliskola.hu/uj/index.php=oldal=124">2007-2008-es tanév</a></li>
+				</ul>
+				
+			  </div>
+			</div>
+		  </div>
+		  <div class="live-tile cyan">
+			<div>
+			  <a class="fancybox" href="#robot">
+				<div class=csempeikon><img src="images/ikonok/robot-128.png" alt="Robotkar" width="96" /></div>
+				<div class=csempenev>Robotika</div>
+			  </a>
+			<div class=fel-ablak>
+				  <div id="robot" class=felugro>
+					<h3 style="padding-top:-10px">A Robotika szakkör</h3>
+					<p align="justify">Az egész szakkör a 2010 évi Kutatók Éjszakájától indult a Debreceni Egyetemen. E rendezvény után kezdtük el a mechatronika szakkör szervezését és LEGO NXT 2.0-k beszerzését. Ebben a tanévben együttműködési szerződést kötöttünk a Debreceni Egyetemmel. &nbsp;Eszközök hiányában lassan haladtunk előre, sokat pályáztunk.<br><br></p>
+					<p align="center"><img width="400" src="images/robot/robot2.jpg" tooltip="" tooltipenable="true" alt="undefined" title=""></img></p>	
+					<p align="justify">
+						Felvettük a kapcsolatot a National Instrument-el is. Az érdeklődés fenntartására előadást tartott nálunk a Debreceni Egyetemről  Dr. Husi Géza tanszékvezető úr. A National Instruments is volt nálunk  Litkei Márton tartott előadást és bemutatót, valamint iskolai szakkört keretében elmentünk a  MACH-TECH-re 2011-ben. 2012-ben pályázati keretből be tudtunk szerezni 5 db LEGO NXT 2.0 oktatási verziót.
+					</p>
+					<p align="center">
+						<img width="400" src="images/robot/robot.JPG"></img>
+					</p>
+					<p align="justify">
+						Kísérleti jelleggel beindítottunk párhuzamosan egy Android szakkört is, hogy Lego Mindstorms Android (MindDroid) alkalmazások születhessenek.
+					<br></br>
+						Ebben a tanévben egy pályázatban elnyert forrás segítségével (amiben 2015 év elejéig nyertünk forrásokat) alapkoncepciót kissé módosítva egy 1-1,5 éves Robotika tananyagot kezdtünk összeállítani. Az alapoktól kezdve kezdtük összeszedni és bemutatni a Robotika témáját hardverszoftverkiegészítők/érzékelők kontextusban, kézzel foghatóan bemutatva és a fizikai-kémiai hátteret is magyarázva, komplex módon és lehetőleg egyszerűen.
+					</p>
+					<ul>
+					  <li><a target=_blank href="http://huszargaliskola.hu/uj/letoltes/tam314/robotic.pdf">A szakkör programja</li>
+					  <li><a target=_blank href="http://hmteam.uw.hu/">A Robotika szakkör honlapja</a></li>
+					</ul>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		 
+		  <div class="live-tile mango">
+			<div>
+			  <a class="fancybox" href="#zene">
+				<div class=csempeikon><img src="images/ikonok/gitar-128.png" alt="Gitár" width="96" /></div>
+				<div class=csempenev>Huszárock</div>
+			  </a> 
+			  <div class=fel-ablak>
+			  <div id="zene" class=felugro>
+				<h2>A Huszárock együttes</h2>
+				<p align="justify">A Huszárock együttes a Huszár Gál Gimnázium, Általános Iskola és AMI iskolazenekara, ... Mónika vezetésével. Az együttes bizonyos időközönként koncerteket tart. Van külön zenekar csak az alsósoknak, de a "nagy zenekarban" is mindenféle korosztály kiveszi a részét. A zenekar már jótékonysági napot is támogatott a műsorával a daganatos beteg gyerekek részére.</p>
+				<p align="justify"><a target="_blank" href="http://youtu.be/LxXQmUa76ks">Ez a videó a 2013-as Huszár Gáláról készült, amiben az együttes is szerepel.</p>
+			  </div>
+			  </div>
+			</div> 
+			</div>
+			<div class="live-tile lime">
+			<div>
+			  <a class="fancybox" href="#kezi">
+				<div class=csempeikon><img src="images/ikonok/kezi-128.png" alt="NI logó" width="96" /></div>
+				<div class=csempenev>Kézilabda</div>
+			  </a>
+			  <div id="kezi" class="felugro fel-ablak">
+				<p><h2>Kézilabda szakkör</h2></p><br>
+				<p align="center"><img width="500" src="images/kezi/1k.jpg"></img></p>
+				<p align="justify">Három korcsoportban működik, az I.-be a legfiatalabb korosztály kerül, elsősorban elsős és másodikos tanulók, akiknek a labda a mozgáskoordináció fejlesztésének alapvető eszköze.Úgy, mint egyensúlyérzék, ritmusérzék, kombinációs képesség, térbeli tájékozódási képesség, szem-kéz koordináció stb. II. csoport és a III. csoportba edzenek a nagyobbak, ahol a sportág technikai és taktikai ismereteivel foglalkozunk, heti két alkalommal. A gimnazista korosztállyal rendszeresen részt veszünk a Magyar Diáksport Szövetség által meghirdetett amatőr kézilabda versenyen, ahol két ízben a városi és megyei olimpián tovább jutva országos döntőbe kerültünk.</p>
+				
+				<p>
+					<a class="fancybox-thumbs" href="images/kezi/2k.jpg" data-fancybox-group="gallery_kezi" title=""><img src="images/kezi/2k.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/kezi/3k.jpg" data-fancybox-group="gallery_kezi" ><img src="images/kezi/3k.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/kezi/4k.jpg" data-fancybox-group="gallery_kezi" ><img src="images/kezi/4k.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/kezi/5k.jpg" data-fancybox-group="gallery_kezi" ><img src="images/kezi/5k.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/kezi/6k.jpg" data-fancybox-group="gallery_kezi" ><img src="images/kezi/6k.jpg" width="150" alt="" /></a>
+				</p>
+				
+			  </div>
+			</div>
+			</div>
+		  <div class="live-tile teal">
+			<div>
+			  <a class="fancybox" href="#ping-pong">
+				<div class=csempeikon><img src="images/ikonok/ping_pong-128.png" alt="NI logó" width="96" /></div>
+				<div class=csempenev>Ping-Pong</div>
+			  </a>
+			  <div id="ping-pong" class="felugro fel-ablak">
+				<p><h2>Ping-pong szakkör</h2></p>
+				<p align="justify">A Támop 3.1. 4-12 „Komplex egészségmegőrzésre irányuló innovációk a Huszár Gál Iskolában” című pályázat keretében Olajos László vezetésével heti rendszerességgel asztalitenisz edzés indult. Az edzések időpontja: minden tanítási nap péntek 14.00 – 16.00 </p>
+				<p>
+					<a class="fancybox-thumbs" href="images/ping-pong/p1.jpg" data-fancybox-group="gallery_pingpong" ><img src="images/ping-pong/p1.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/ping-pong/p2.jpg" data-fancybox-group="gallery_pingpong" ><img src="images/ping-pong/p2.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/ping-pong/p3.jpg" data-fancybox-group="gallery_pingpong" ><img src="images/ping-pong/p3.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/ping-pong/p4.jpg" data-fancybox-group="gallery_pingpong" ><img src="images/ping-pong/p4.jpg" width="150" alt="" /></a>
+				</p>
+			  </div>
+			</div>
+		</div> 
+		  
+		  <div class="live-tile emerald">
+			<div>
+			  <a class="fancybox" href="#foci">
+				<div class=csempeikon><img src="images/ikonok/foci-128.png" alt="NI logó" width="96" /></div>
+				<div class=csempenev>Labdarugás</div>
+			  </a>
+			  <div id="foci" class="felugro fel-ablak">
+				<p><h2>Foci szakkör</h2></p>
+				<p align="justify">2013. október 20-án vasárnap a Pallagi Akadémián került megrendezésre az őszi Bozsik Intézményi Torna, melyen Iskolánk két korcsoportban is képviseltette magát. Minden kedves diákunknak gratulálunk a tornán nyújtott sikeres teljesítményéért.</p>
+				<p><strong>Eredmények</strong><br>
+					- II.-es korcsoport (2004-2003): korcsoportjában 3. helyezés<br>
+					- III.-as korcsoport (2002-2001): csoportjában 2. helyezés
+				</p>
+				<p>
+					<a class="fancybox-thumbs" href="images/foci/b1.jpg" data-fancybox-group="gallery_foci" title=""><img src="images/foci/b1.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/foci/b2.jpg" data-fancybox-group="gallery_foci" ><img src="images/foci/b2.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/foci/b3.jpg" data-fancybox-group="gallery_foci" ><img src="images/foci/b3.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/foci/b4.jpg" data-fancybox-group="gallery_foci" ><img src="images/foci/b4.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/foci/b5.jpg" data-fancybox-group="gallery_foci" ><img src="images/foci/b5.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/bozsik/andrisfoci2.jpg" data-fancybox-group="gallery_foci" ><img src="images/bozsik/andrisfoci2.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/bozsik/andrisfoci3.jpg" data-fancybox-group="gallery_foci" ><img src="images/bozsik/andrisfoci3.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/bozsik/andrisfoci4.jpg" data-fancybox-group="gallery_foci" ><img src="images/bozsik/andrisfoci4.jpg" width="150" alt="" /></a>
+					<a class="fancybox-thumbs" href="images/bozsik/andrisfoci1.jpg" data-fancybox-group="gallery_foci" ><img src="images/bozsik/andrisfoci1.jpg" width="150" alt="" /></a>
+				</p>
+			  </div>
+			</div>
+		</div>
+		<div class="live-tile green">
+			<div>
+			  <a class="fancybox fancybox.iframe" href="http://huszargaliskola.hu/uj/index.php=oldal=125">
+				<div class=csempeikon><img src="images/ikonok/ötlet-128.png" alt="Lámpa" width="96" /></div>
+				<div class=csempenev>A többi szakkör</div>
+			  </a>
+			</div>
+		</div>
+		<div class="live-tile yellow">
+			<div>
+			  <a class="fancybox" href="#art">
+				<div class=csempeikon><img src="images/ikonok/art-128.png" alt="Művészet" width="96" /></div>
+				<div class=csempenev>Művészetoktatás</div>
+			  </a>
+			</div>
+			<div id="art" class="felugro fel-ablak">
+			  <h2>MŰVÉSZETOKTATÁS</h2>
+			  <p align="center"><img src="images/davidart.png"></img></p>
+			  <p align="justify">A Huszár Gál Iskolába járó tanulóknak a művészetoktatás keretein belül lehetőségük van megismerkedni a képzőművészet különböző ágaival, elsősorban a grafikával és a festészettel, de mindezek mellett a kerámia és a mintázás alapjaiba is betekintést nyerhetnek. Tanulóink évek óta eredményesen szerepelnek helyi, megyei, országos, és nemzetközi megmérettetéseken.</p>
+			  <br>
+			  <a><a>
+			</div>
+		</div>
+		</div>
+		<div class="tile-strip fivehalf-wide half-tall">
+		  <div class="live-tile half-tall fivehalf-wide red">
+			  <div>
+				<div style="text-align: center;vertical-align: middle;"><img style="float:left" src="images/ikonok/felk_jel-64.png"></div>
+				<div style="text-align:center; padding-left:20px">A Huszár Gál Iskola célja a tehetségek gondozása, fejlesztése és fontosnak tartja, hogy támogassa őket. Ezen felül nagy hangsúlyt fektet az esélyeggyenlőségre, arra hogy minden diákja korszerű tanulási eszközökkel tanulhasson és a minőségi oktatásra, hogy minden diákja a legtöbbet tudja kihozni magából. (Az oldal egy weblapfejlesztő pályázatára készült)</div>
+			  </div>
+		  </div>
+		</div>
+	   
+	  </div>
+	</div>
+	  
+	  <div class="tiles tile-group four-wide">
+		<div class=alcím>Iskolánkról</div>
+		<div class="tile-strip two-tile">
+		  <div class=" random-lassu live-tile violet two-wide" data-mode="carousel" data-start-now="true" data-direction="horizontal" data-delay="5200" data-pause-onhover="pause">
+			<div>
+			  <div class=csempeikon-szeles><img style="vertical-align: middle;" src="images/ikonok/beszéd-128.png" alt="Németh Sándor" width="140" /></div>
+			  <div class="csempenev-szeles fo">Küldetésnyilatkozat</div>
+			</div>
+			<div>
+			  <div class=csempeikon-szeles><img style="vertical-align: middle;" src="images/sandor.jpg" alt="Németh Sándor" width="170" /></div>
+			  <div class=csempelink-szeles><a href="http://huszargaliskola.hu/uj/index.php=oldal=50">Írott változat</a> | <a href="http://www.huszargaliskola.hu/video/Nemethsandor.wmv">Videó változat</a></div>
+			  <div class=csempenev-szeles>Németh Sándornak, a Hit Gyülekezete vezető lelkészének ünnepi beszéde iskolánk első évnyitóján </div>
+			</div>
+			<div>
+			  <div class=csempeikon-szeles><img style="vertical-align: middle;" src="images/kosa.jpg" alt="Németh Sándor" width="170" /></div>
+			  <div class=csempelink-szeles><a href="http://www.huszargaliskola.hu/video/beszed.wmv">Videó változat</a></div>
+			  <div class=csempenev-szeles>Kósa Lajosnak, Debrecen Megyei Jogú Város Polgármesterének tanévnyitó ünnepi beszéde iskolánkban-2004</div>
+			</div>
+		  </div>
+		  <div class="live-tile violet one-tall random-lassu" data-mode="carousel" data-start-now="true" data-direction="horizontal">
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/letoltes/hazirend1.pdf" target=_blank>
+				<div class=csempeikon><img src="images/ikonok/menu-128.png" alt="Lista" width="96" /></div>
+				<div class=csempenev>Házirend</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=56" target=_blank>
+				<div class=csempeikon><img src="images/ikonok/galeria-128.png" alt="Galéria" width="96" /></div>
+				<div class=csempenev>Galéria</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargalblog.blogspot.hu/" target=_blank>
+				<div class=csempeikon><img src="images/ikonok/megosztas-128.png" alt="Megosztás" width="96" /></div>
+				<div class=csempenev>Blog</div>
+			  </a>
+			</div>
+		  </div>
+		  <div class="live-tile violet half-tall random-gyors" data-mode="carousel" data-start-now="true" data-direction="horizontal">
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=15" target=_blank >
+				<div class=csempeikon-lapos><img src="images/ikonok/penz-64.png" alt="Pénz" width="60" /></div>
+				<div class=csempenev-lapos>Pályázatok</div>
+			  </a>
+			</div>
+			<div>
+			   <a href="http://huszargalblog.blogspot.hu/" target=_blank>
+				<div class=csempeikon-lapos><img src="images/ikonok/megosztas-64.png" alt="Megosztás" width="60" /></div>
+				<div class=csempenev-lapos>Blog</div>
+			  </a>
+			</div>
+		  </div>
+		  <div class="live-tile violet half-tall random-gyors" data-mode="carousel" data-start-now="true" data-direction="horizontal">
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=78" target=_blank>
+				<div class=csempeikon-lapos><img src="images/ikonok/pincer-64.png" alt="Pincér" width="60" /></div>
+				<div class=csempenev-lapos>Bérleti lehetőségek</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=78" target=_blank>
+				<div class=csempeszoveg-lapos>Tantermek 46-50-53m<sup>2</sup><br> Pl.:Tanfolyamok</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=78" target=_blank>
+				<div class=csempeszoveg-lapos>Aula - 180m<sup>2</sup><br> Pl.:Rendezvények</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=78" target=_blank>
+				<div class=csempeszoveg-lapos>Étterem - 190m<sup>2</sup><br> Pl.:Esküvők</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/index.php=oldal=78" target=_blank>
+				<div class=csempeszoveg-lapos>Tornacsarnok - 190m<sup>2</sup><br> Pl.:Kiállítások</div>
+			  </a>
+			</div>
+			
+		  </div>
+		</div>
+		<div class="tile-strip two-tall two-wide">
+		  <div class="random-gyors live-tile violet two-tile" data-mode="carousel" data-start-now="false" data-direction="horizontal" data-pause-onhover="pause">
+			<div>
+				<div class=csempeikon_nagy><img src="images/ikonok/felvi-256.png" alt="Iskola" width="200" /></div>
+				<div class=csempenev-nagy>Felvételi Információk:</div>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/letoltes/beir2013.pdf" target=_blank>
+				<div class=csempeikon_nagy><img src="images/ikonok/suli-256.png" alt="Iskola" width="200" /></div>
+				<div class=csempenev-nagy>Felvételi tájékoztató a 1. évfolyamra jelentkezőknek</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/letoltes/tovtaj2014.pdf" target=_blank>
+				<div class=csempeikon_nagy><img src="images/ikonok/haladas-256.png" alt="Pozitív változás" width="200" /></div>
+				<div class=csempenev-nagy>Továbbhaladási tájékoztató a 8. évfolyamosok számára</div>
+			  </a>
+			</div><div>
+			  <a href="http://huszargaliskola.hu/uj/letoltes/felvtaj2014.pdf" target=_blank>
+				<div class=csempeikon_nagy><img src="images/ikonok/gimis_tan-256.png" alt="Tanuló" width="200" /></div>
+				<div class=csempenev-nagy>Felvételi tájékoztató a 9. évfolyamra jelentkezőknek</div>
+			  </a>
+			</div>
+			<div>
+			  <a href="http://huszargaliskola.hu/uj/letoltes/jelentkezokfelvetelijegyzeke.pdf">
+				<div class=csempeikon_nagy><img src="images/felveteli.png" alt="Tanuló" height="200" /></div>
+				<div class=csempenev-nagy>Ideiglenes felvételi rangsor</div>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	
+	<div class="tiles tile-group three-wide three-tall">
+	   <div class=alcím>Kapcsolatfelvételi űrlap</div>
+		<div class="tile-strip three-wide three-tall">
+		  <div class="live-tile three-wide orange">
+		  <div>
+			<form action="#" method="post">
+			  
+				<fieldset class="felasznalo">
+				  <legend> Üzenetküldő/Kérdező Adatai: </legend>
+				  <p><label for="name" class="label_1"><img src="images/Urlap/name/name-48.png" width="36"></label> 
+				  <input type="text" name="name" id="name" placeholder="Teljes név!" required>
+					<span style="font-size:1em">Pl.:Mekk Elek</span></p>
+				  <p><label for="email" class="label_1"><img src="images/Urlap/email/email-48.png" width="36"></label>
+				  <input type="email" name="email" id="email"  placeholder="valami@szolgáltató.com" required>
+					<span style="font-size:1em">Pl.:elek@kecskemail.com</span></p>
+				</fieldset>
+			
+			  </div>
+			</div>
+	
+			<div class="live-tile three-wide half-tall orange">
+			  <div style="top:-5px">
+			 
+				<fieldset class="targy">
+				  <legend>Üzenet tárgya:</legend>
+				  <div style="display:relative;vertical-align: middle;float:left; padding-right:10px"><img src="images/Urlap/question/question-48.png" width="36"></div>
+				  <select>
+					<optgroup label="Kérdés">
+					  <option value="iskola_kerdes">Iskolával kapcsolatos kérdés</option>
+					  <option value="felveteli_kerdes">Felvétellel kapcsolatos kérdés</option>
+					  <option value="egyeb_kerdes">Egyéb kérdés</option>
+					</optgroup>
+					<optgroup label="Üzenet">
+					  <option value="kerelem">Kérelem küldése az iskola felé</option>
+					  <option value="uzenet_vez">Üzenet küldése a vezetőségnek</option>
+					  <option value="egyeb_uzenet">Egyéb üzenet</option>
+					</optgroup>
+					<optgroup label="Visszajelzés a honlapról">
+					  <option value="honlap_megj">Megjegyzés a honlapról</option>
+					  <option value="honlap_eszr">Észrevétel a honlapról</option>
+					</optgroup>
+				  </select>
+				</fieldset> 
+				
+			  </div>
+			</div>
+			<div class="live-tile three-wide orange">
+			  <div>
+			  
+				<fieldset>
+				  <legend>Üzenet:</legend>
+				  <textarea name="szoveg" id="szoveg" rows="5" cols="30" 
+				  placeholder="Ide írja üzenetét vagy kérdését!" required></textarea>  
+				</fieldset>
+				<p class="submit" ><input type="submit" value="Elküld" /></p>
+			  </form>
+			  </div>
+			</div>
+			
+     </div>
+   </div>
+	
+	<footer>
+	  <div id="lablec" itemscope itemtype="http://schema.org/EducationalOrganization">
+		<span itemtype="http://schema.org/PostalAddress"><span itemprop="postalCode">4030</span> <span itemprop="addressLocality">Debrecen</span>, <span itemprop="streetAddress">Diószegi út 21.</span></span> | <span itemtype="http://schema.org/EducationalOrganization">Tel.: <span itemprop="telephone">(52) 537-078</span> | fax: <span itemprop="faxNumber">(52) 537-079</span> | e-mail: <span itemprop="email">huszargaliskola@freemail.hu</span></span>
+		<span style="float:right; padding-right:30px">Az oldalt <span itemprop="makesOffer"><strong>Vágner Máté</strong></span> készítette. Copyright © 2014</span>
+	  </div>
+	</footer>
+	
+	
+	<script type="text/javascript">
+		$(".liveTile").liveTile();
+	</script>	
+	
+	<script type="text/javascript">
+	$("#logolista").liveTile({
+    tileSelector: '>div:not(.exclude)',
+    alwaysTrigger: true,
+    triggerDelay: function(idx){
+        return idx * 250;
+    }
+});
+	</script>
+
+
+	<script type="text/javascript">
+// carousel mode:goto Basic
+var totalSlides = $("#hirek>div").length;
+$("#hirek").liveTile({
+    // animation complete is used to update the status.
+    animationComplete: function(tileData, $front, $back){
+        var cur = $(this).find(".active").index() + 1;
+        $(".statusz").text(' ' + cur + '.');
+    }
+});
+$(".prev").click(function(){
+    $("#hirek").liveTile("goto", "prev");
+});
+$(".next").click(function(){    
+    $("#hirek").liveTile("goto", "next");
+    // or
+    //$("#hirek").liveTile("goto");
+});
+	</script>
+	
+	<script>
+$(function() {
+   $("body").mousewheel(function(event, delta) {
+      this.scrollLeft -= (delta * 30);
+      event.preventDefault();
+   });
+});
+	</script>
+
+<script type="text/javascript">
+		function viewMore(div) {
+			obj = document.getElementById(div);
+			col = document.getElementById("x" + div);
+ 
+			if (obj.style.display == "none") {
+				obj.style.display = "block";
+				col.innerHTML = "&darr; Eredményeink-Tanévek szerint";
+			} else {
+				obj.style.display = "none";
+				col.innerHTML = "&rarr; Eredményeink-Tanévek szerint";
+			}
+		}
+	</script>
+	
+<script type="text/javascript">
+
+	
+	
+	// carousel mode: random
+function getRandomOptions(){
+    // this could obviously be a lot more random
+    var doIt = Math.floor(Math.random() * 1001) % 2 == 0;
+    // set random options supported by the goto method
+    // http://www.drewgreenwell.com/projects/metrojs#liveTileMethods
+    return {
+            index: "next",
+            delay: 3000,
+            animationDirection: doIt ? 'forward' : 'backward',
+            direction: doIt ? 'vertical' : 'horizontal'
+        };
+}
+// setup the tile and then call goto on it the first time
+$(".random-gyors").liveTile({
+    animationComplete: function(tileData){        
+        $(this).liveTile("goto", getRandomOptions());
+    }
+}).liveTile("goto", getRandomOptions());
+</script>
+
+
+<script type="text/javascript">
+	// carousel mode: random
+function getRandomOptions(){
+    // this could obviously be a lot more random
+    var doIt = Math.floor(Math.random() * 1001) % 2 == 0;
+    // set random options supported by the goto method
+    // http://www.drewgreenwell.com/projects/metrojs#liveTileMethods
+    return {
+            index: "next",
+            delay: 4500,
+            animationDirection: doIt ? 'forward' : 'backward',
+            direction: doIt ? 'vertical' : 'horizontal'
+        };
+}
+// setup the tile and then call goto on it the first time
+$(".random-lassu").liveTile({
+    animationComplete: function(tileData){        
+        $(this).liveTile("goto", getRandomOptions());
+    }
+}).liveTile("goto", getRandomOptions());
+</script>
+
+<script type="text/javascript">
+$(".live-tile.flip-magas").liveTile();
+</script>	
+  </body>
+</html>
